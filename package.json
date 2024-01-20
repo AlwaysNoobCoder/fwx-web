@@ -8,7 +8,12 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "prepare": "husky install",
-    "sea-api": "pnpm --filter sea-api"
+    "api": "pnpm --filter fwx-api",
+    "ui": "pnpm --filter fwx-ui",
+    "vue": "pnpm --filter fwx-ui-vue",
+    "ep": "pnpm --filter fwx-ui-vue-ep",
+    "antdv": "pnpm --filter fwx-ui-vue-antdv",
+    "site": "pnpm --filter fwx-site"
   },
   "lint-staged": {
     "**/*.{js,ts,tsx}": [

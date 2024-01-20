@@ -1,9 +1,9 @@
 {
-  "name": "sea-api",
+  "name": "fwx-api",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/sea-api.js",
+  "main": "./dist/fwx-api.js",
   "types": "./dist/main.d.ts",
   "scripts": {
     "dev": "vite",

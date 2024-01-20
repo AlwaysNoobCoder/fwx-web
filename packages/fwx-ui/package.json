@@ -1,0 +1,19 @@
+{
+  "name": "fwx-ui",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "typescript": "^5.2.2",
+    "vite": "^5.0.8",
+    "vite-plugin-dts": "^3.7.1"
+  },
+  "dependencies": {
+    "fwx-api": "workspace:^"
+  }
+}
