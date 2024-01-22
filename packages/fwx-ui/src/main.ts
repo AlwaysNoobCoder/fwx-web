@@ -1,4 +1,4 @@
-import { StringOperators } from 'fwx-api'
+import { StringOperators } from 'fwx-api/api'
 const a = {
   operators: StringOperators,
 }

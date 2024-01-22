@@ -20,6 +20,29 @@ export enum Operator {
   NNI = 16,
 }
 
+export class FilterOperator {
+  public static readonly EQ = new FilterOperator(Operator.EQ, '等于')
+  public static NEQ = new FilterOperator(Operator.EQ, '不等于')
+  public static GT = new FilterOperator(Operator.GT, '大于')
+  public static GTE = new FilterOperator(Operator.GTE, '大于')
+  public static LT = new FilterOperator(Operator.LT, '小于')
+  public static LTE = new FilterOperator(Operator.LTE, '小于等于')
+  public static SW = new FilterOperator(Operator.SW, '以……开始')
+  public static NSW = new FilterOperator(Operator.NSW, '不以……开始')
+  public static CT = new FilterOperator(Operator.CT, '包含')
+  public static NCT = new FilterOperator(Operator.NCT, '不包含')
+  public static EW = new FilterOperator(Operator.EW, '以……结尾')
+  public static NEW = new FilterOperator(Operator.NEW, '不以……结尾')
+  public static BT = new FilterOperator(Operator.BT, '在……和……之间')
+  public static NBT = new FilterOperator(Operator.NBT, '不在……和……之间')
+  public static NIL = new FilterOperator(Operator.NIL, '为Null')
+  public static NNI = new FilterOperator(Operator.NNI, '不为Null')
+  public constructor(
+    public operator: Operator,
+    public label: string,
+  ) {}
+}
+
 /**
  * <h5>Filter Logic</h5>
  */

@@ -3,8 +3,23 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "main": "./dist/fwx-api.js",
-  "types": "./dist/main.d.ts",
+  "files": [
+    "dist/*",
+    "index.d.ts",
+    "api.d.ts",
+    "types.d.ts"
+  ],
+  "types": "./dist/index.d.ts",
+  "exports": {
+    "./api": {
+      "import": "./dist/api.js",
+      "require": "./dist/api.cjs"
+    },
+    "./types": {
+      "import": "./dist/types.js",
+      "require": "./dist/types.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

@@ -1,28 +1,55 @@
+import { FilterOperator } from './api'
+
 /**
  * <h5>Meidas Enum</h5>
  */
 export enum SEAMedia {
   /**
-   * JSON
+   * JSON Media
    */
   Json,
   /**
-   * HTML Dom
+   * HTML DOM Media
    */
   Dom,
 }
 
+/**
+ * <h5>Meida Converter</h5>
+ */
 export interface MediaConverter {
   from: (v: NonNullable<unknown>) => NonNullable<unknown>
   to: (v: NonNullable<unknown>) => NonNullable<unknown>
 }
 
+/**
+ * <h5>SEAType Class</h5>
+ */
 export class SEAType {
-  public static readonly String: SEAType = new SEAType(1, null)
-  public static readonly Int: SEAType = new SEAType(2, null)
+  public static readonly String: SEAType = new SEAType(1, null, [
+    FilterOperator.EQ,
+    FilterOperator.NEQ,
+    FilterOperator.SW,
+    FilterOperator.NSW,
+    FilterOperator.EW,
+    FilterOperator.NEW,
+    FilterOperator.CT,
+    FilterOperator.NCT,
+  ])
+  public static readonly Int: SEAType = new SEAType(2, null, [
+    FilterOperator.EQ,
+    FilterOperator.NEQ,
+    FilterOperator.GT,
+    FilterOperator.GTE,
+    FilterOperator.LT,
+    FilterOperator.LTE,
+    FilterOperator.BT,
+    FilterOperator.NBT,
+  ])
   protected constructor(
     public code: number,
     public cvs: Map<SEAMedia, MediaConverter> | null,
+    public defaultFilterOperators: FilterOperator[],
   ) {}
 }
 
