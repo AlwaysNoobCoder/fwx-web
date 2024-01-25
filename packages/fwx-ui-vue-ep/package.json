@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "element-plus": "^2.5.2",
+    "fwx-ui-vue": "workspace:^",
     "vue": "^3.3.11"
   },
   "devDependencies": {

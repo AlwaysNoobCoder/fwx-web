@@ -91,6 +91,9 @@ importers:
 
   packages/fwx-ui-vue:
     dependencies:
+      fwx-ui:
+        specifier: workspace:^
+        version: link:../fwx-ui
       vue:
         specifier: ^3.3.11
         version: 3.4.15(typescript@5.3.3)
@@ -104,6 +107,9 @@ importers:
       vite:
         specifier: ^5.0.8
         version: 5.0.12(@types/node@20.11.5)
+      vite-plugin-dts:
+        specifier: ^3.7.1
+        version: 3.7.1(@types/node@20.11.5)(typescript@5.3.3)(vite@5.0.12)
       vue-tsc:
         specifier: ^1.8.25
         version: 1.8.27(typescript@5.3.3)
@@ -135,6 +141,9 @@ importers:
       element-plus:
         specifier: ^2.5.2
         version: 2.5.2(vue@3.4.15)
+      fwx-ui-vue:
+        specifier: workspace:^
+        version: link:../fwx-ui-vue
       vue:
         specifier: ^3.3.11
         version: 3.4.15(typescript@5.3.3)
