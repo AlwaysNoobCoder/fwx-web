@@ -1,7 +1,9 @@
 <template>
-  <el-table></el-table>
+  <FWXContext>
+    <el-table></el-table>
+  </FWXContext>
 </template>
 
 <script setup lang="ts">
-import type { TableView } from 'fwx-ui/types'
+import { FWXContext } from 'fwx-ui-vue'
 </script>

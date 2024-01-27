@@ -13,3 +13,5 @@ export type TableView = EntityView & {
 export type FormView = EntityView & {
   columns: number
 }
+
+export const A = 1

@@ -11,7 +11,7 @@ export default defineConfig({
         ui: path.resolve(__dirname, 'src/index.ts'),
       },
       name: 'FWXUIVue',
-      fileName: 'fwx-ui-vue',
+      fileName: 'index',
       formats: ['es'],
     },
     rollupOptions: {

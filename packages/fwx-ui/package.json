@@ -9,12 +9,6 @@
     "ui.d.ts"
   ],
   "types": "./dist/index.d.ts",
-  "exports": {
-    "./ui": {
-      "import": "./dist/ui.js",
-      "require": "./dist/ui.cjs"
-    }
-  },
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",

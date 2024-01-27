@@ -30,11 +30,9 @@
     "build": "vue-tsc && vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
-    "fwx-ui": "workspace:^"
-  },
   "peerDependencies": {
-    "vue": "^3.3.11"
+    "vue": "^3.3.11",
+    "fwx-ui": "workspace:^"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.5.2",
